@@ -12,7 +12,7 @@ const AddProducts = () => {
 
     const data = { id, title, brand, price, description, image_url };
 
-    await fetch("http://localhost:3000/shoes", {
+    await fetch("https://task1-backend-a4fuz98em-tanvirs-projects-0b5d20de.vercel.app/shoes", {
       method: "POST",
       headers: {
         "Content-type": "application/json",

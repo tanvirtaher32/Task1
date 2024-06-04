@@ -24,7 +24,7 @@ const EditProducts = () => {
 
     const data = { id, title, brand, price, description, image_url };
 
-    await fetch(`http://localhost:3000/shoes/${shoe.id}`, {
+    await fetch(`https://task1-backend-a4fuz98em-tanvirs-projects-0b5d20de.vercel.app/shoes/${shoe.id}`, {
       method: "PATCH",
       headers: {
         "Content-type": "application/json",

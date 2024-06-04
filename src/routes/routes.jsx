@@ -23,13 +23,13 @@ export const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
-        loader: () => fetch("http://localhost:3000/shoes"),
+        loader: () => fetch("https://task1-backend-a4fuz98em-tanvirs-projects-0b5d20de.vercel.app/shoes"),
       },
       {
         path: "/products/:id",
         element: <ProductDetails />,
         loader: ({ params }) =>
-          fetch(`http://localhost:3000/shoes/${params.id}`),
+          fetch(`https://task1-backend-a4fuz98em-tanvirs-projects-0b5d20de.vercel.app/shoes/${params.id}`),
       },
       {
         path: "/about",
@@ -95,7 +95,7 @@ export const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:3000/shoes/${params.id}`),
+          fetch(`https://task1-backend-a4fuz98em-tanvirs-projects-0b5d20de.vercel.app/shoes/${params.id}`),
       },
     ],
   },

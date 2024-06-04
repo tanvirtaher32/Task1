@@ -6,7 +6,7 @@ const SingleProductCardDashboard = ({ shoe, onDelete }) => {
   const { id, title, brand, price, description, image_url } = shoe;
 
   const handleDelete = async () => {
-    await fetch(`http://localhost:3000/shoes/${id}`, {
+    await fetch(`https://task1-backend-a4fuz98em-tanvirs-projects-0b5d20de.vercel.app/shoes/${id}`, {
       method: "DELETE",
     })
       .then((res) => res.json())
